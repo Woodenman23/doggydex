@@ -9,6 +9,7 @@ from flask import (
     jsonify,
 )
 from flask_login import logout_user, current_user
+from pathlib import Path
 import torch
 import torchvision.transforms as transforms
 import torchvision.models as models
@@ -160,14 +161,14 @@ def home() -> None:
         dog_image_path = f'static/uploads/{str(file_path).split("/")[-1]}'
 
         # TODO: fix this path (download model state from google drive)
-        MODEL_PATH = (
-            f"/content/drive/MyDrive/projects/pokedex/dognet-convnext_large.pth"
-        )
+        MODEL_PATH = Path.home() / "dognet-convnext_large.pth"
         model = models.convnext_large(pretrained=True)
         model.classifier[-1] = torch.nn.Linear(
             model.classifier[-1].in_features, num_dog_breeds
         )
-        model.load_state_dict(torch.load(MODEL_PATH, map_location=torch.device("cpu")))
+        model.load_state_dict(
+            torch.load(str(MODEL_PATH), map_location=torch.device("cpu"))
+        )
         image_path = str(file_path)
         image = Image.open(image_path)
 
