@@ -2,7 +2,6 @@ from flask import Flask
 from pathlib import Path
 from datetime import timedelta
 from flask_sqlalchemy import SQLAlchemy
-from flask_login import LoginManager
 
 
 class Section:
@@ -27,8 +26,6 @@ def get_secret(secret_name):
         print(f"Secret {secret_name} not found!")
         return None
 
-
-OPEN_AI_API_TOKEN = get_secret("open_ai_token")
 
 db = SQLAlchemy()
 # login_manager = LoginManager()
