@@ -29,51 +29,34 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbar"
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbar"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="container d-flex justify-content-between">
+    <div class="collapse navbar-collapse" id="navbar">
+      <a
+        class="navbar-brand d-flex align-items-center"
+        href="{{ url_for('views.home') }}"
       >
-        <span class="navbar-toggler-icon"></span>
-      </button>
+        <img src="/static/images/dog.jpg" alt="..." height="100" />
+      </a>
 
-      <div class="container d-flex justify-content-between">
-        <div class="collapse navbar-collapse" id="navbar">
-          <a
-            class="navbar-brand d-flex align-items-center"
-            href="{{ url_for('views.home') }}"
-          >
-            <img src="/static/images/scribe.jpg" alt="..." height="100" />
-          </a>
-
-          <div class="navbar-nav ml-auto">
-            {% for section in sections.values() %}
-            <a
-              class="nav-item nav-link mr-auto"
-              id="{{ section.name }}"
-              href="/{{ section.name }}"
-            >
-              {{ section.title }}
-            </a>
-            {% endfor %} {% if not session["user"] %}
-            <a class="nav-item nav-link" id="login" href="/login">Login</a>
-            <a class="nav-item nav-link" id="signup" href="/signup">Sign Up</a>
-            <a class="nav-item nav-link" id="demp" href="/demo">Demo</a>
-            {% else %}
-            <a class="nav-item nav-link" id="builder" href="/builder">
-              Letter Builder
-            </a>
-            <a class="nav-item nav-link" id="profile" href="/profile">
-              Profile
-            </a>
-            <a class="nav-item nav-link" id="logout" href="/logout">Logout</a>
-            {% endif %}
-          </div>
-        </div>
+      <div class="navbar-nav ml-auto">
+        <!-- External link to portfolio website -->
+        <a class="nav-item nav-link" id="portfolio" href="https://www.josephfoster.me" target="_blank">Josephfoster.me</a>
       </div>
-    </nav>
+    </div>
+  </div>
+</nav>
+
+
 
     <br />
     {% with messages = get_flashed_messages(with_categories=true) %} {% if

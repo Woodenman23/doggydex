@@ -1,0 +1,7 @@
+Flask
+pillow
+google-auth
+google-api-python-client
+torch
+torchvision
+flask_sqlalchemy

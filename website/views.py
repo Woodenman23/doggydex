@@ -6,24 +6,11 @@ from flask import (
     url_for,
     jsonify,
 )
-from google.cloud import storage
-from PIL import Image
 
-from website import PROJECT_ROOT
+from website.drive_access import upload_to_drive, download_from_drive
 from website.identifier import identify
 
 views = Blueprint("views", __name__)
-client = storage.Client()
-bucket_name = "doggydex_store"
-bucket = client.get_bucket(bucket_name)
-
-image_path = "path/to/your/image.jpg"
-blob = bucket.blob("image.jpg")
-blob.upload_from_filename(image_path)
-
-
-upload_folder = PROJECT_ROOT / "website/static/uploads"
-num_dog_breeds = 120
 
 
 @views.route("/", methods=["GET", "POST"])
@@ -36,10 +23,10 @@ def home() -> None:
         if file.filename == "":
             return "No selected file"
 
-        file_path = upload_folder / file.filename
-        file.save(str(file_path))
+        if file and file.filename:
+            file_id = upload_to_drive(file.stream, file.filename, file.mimetype)
 
-        image = Image.open(str(file_path))
+        image = download_from_drive(file_id)
 
         return render_template(
             "dog.html.j2",
@@ -53,8 +40,3 @@ def home() -> None:
 @views.route("/session_data")
 def session_data():
     return jsonify(dict(session))
-
-
-@views.route("/about")
-def about():
-    return "this is the about page"

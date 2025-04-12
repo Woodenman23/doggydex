@@ -1,15 +1,17 @@
-from pathlib import Path
 import torch
 import torchvision.transforms as transforms
 import torchvision.models as models
 
+from website import PROJECT_ROOT
 from website.classes import classes
 
 num_dog_breeds = 120
 
+MODEL_PATH = PROJECT_ROOT / "models/dognet-convnext_large.pth"
+
 
 def identify(image):
-    MODEL_PATH = Path.home() / "dognet-convnext_large.pth"
+
     model = models.convnext_large(pretrained=True)
     model.classifier[-1] = torch.nn.Linear(
         model.classifier[-1].in_features, num_dog_breeds
@@ -18,7 +20,7 @@ def identify(image):
 
     transform = transforms.Compose(
         [
-            transforms.RandomResizedCrop(224),
+            transforms.CenterCrop(224),
             transforms.ToTensor(),
             transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5)),
         ]
