@@ -26,12 +26,12 @@ def home() -> None:
         if file and file.filename:
             file_id = upload_to_drive(file.stream, file.filename, file.mimetype)
 
-        image = download_from_drive(file_id)
+        pil_image, html_image = download_from_drive(file_id)
 
         return render_template(
             "dog.html.j2",
-            dog_image=url_for("static", filename=f"uploads/{file.filename}"),
-            results=identify(image),
+            dog_image=html_image,
+            results=identify(pil_image),
         )
 
     return render_template("home.html.j2")

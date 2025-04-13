@@ -1,7 +1,7 @@
 import io
+import base64
 from PIL import Image
 
-from flask import send_file
 from googleapiclient.discovery import build
 from googleapiclient.http import MediaIoBaseUpload, MediaIoBaseDownload
 from google.oauth2 import service_account
@@ -55,7 +55,12 @@ def download_from_drive(file_id):
 
     fh.seek(0)
     pil_image = Image.open(fh)
-    return pil_image, send_file(fh, mimetype="image/jpeg")
+    jpeg_io = io.BytesIO()
+    pil_image.convert("RGB").save(jpeg_io, format="JPEG")
+    jpeg_io.seek(0)
+    jpeg_b64 = base64.b64encode(jpeg_io.read()).decode("utf-8")
+
+    return pil_image, jpeg_b64
 
 
 def file_exists(filename):
