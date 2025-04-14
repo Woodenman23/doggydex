@@ -1,0 +1,37 @@
+# Python artifacts
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+
+# Editor and OS files
+*.swo
+*.swp
+*.DS_Store
+*.bak
+
+# Logs and temp
+*.log
+.pytest_cache/
+.cache/
+
+# Project files
+.venv/
+.env
+.git/
+.gitignore
+poetry.lock
+pyproject.toml
+certs/
+instance/
+
+# Docs
+README.md
+*.md
+
+# Weights and data
+data/
+
+# Docker
+.dockerignore
+Dockerfile

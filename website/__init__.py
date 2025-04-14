@@ -1,7 +1,6 @@
 from flask import Flask
 from pathlib import Path
 from datetime import timedelta
-from flask_sqlalchemy import SQLAlchemy
 
 
 class Section:
@@ -27,42 +26,15 @@ def get_secret(secret_name):
         return None
 
 
-db = SQLAlchemy()
-# login_manager = LoginManager()
-
-section_names = ["about"]
-SECTIONS = {name: Section(name) for name in section_names}
-
-
 def create_app() -> Flask:
     app = Flask(__name__)
     app.config["SECRET_KEY"] = "1234"
     app.permanent_session_lifetime = timedelta(days=3)
     app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///users.sqlite3"
     app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
-    app.context_processor(add_sections)
-
-    db.init_app(app)
-    # login_manager.init_app(app)
-    # login_manager.login_view = "auth.login"
 
     from website.views import views
 
-    # from website.auth import auth
-    # from website.info import info
-    # from website.uploads import uploads
-
     app.register_blueprint(views, url_prefix="/")
-    # app.register_blueprint(auth, url_prefix="/")
-    # app.register_blueprint(info, url_prefix="/")
-    # app.register_blueprint(uploads, url_prefix="/")
-
-    with app.app_context():
-        # db.drop_all()  # FOR DEV ENVIRONMENT ONLY
-        db.create_all()
 
     return app
-
-
-def add_sections():
-    return {"sections": SECTIONS}
