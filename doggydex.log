@@ -1,0 +1,76 @@
+INFO:googleapiclient.discovery_cache:file_cache is only supported with oauth2client<4.0.0
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.42.107:5001
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+INFO:googleapiclient.discovery_cache:file_cache is only supported with oauth2client<4.0.0
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 505-592-026
+INFO:website:Server started
+INFO:website:Server started
+INFO:googleapiclient.discovery_cache:file_cache is only supported with oauth2client<4.0.0
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.42.107:5001
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+INFO:googleapiclient.discovery_cache:file_cache is only supported with oauth2client<4.0.0
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 505-592-026
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2025 16:29:33] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2025 16:29:33] "[33mGET /css/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2025 16:29:33] "[33mGET /css/styles.css/bootstrap.min.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2025 16:29:33] "[33mGET /js/bootstap.bundle.min.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2025 16:29:33] "[33mGET /static/index.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2025 16:29:33] "[36mGET /static/images/dog.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2025 16:29:33] "[36mGET /static/spinner.gif HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2025 16:29:33] "[33mGET /js/bootstap.bundle.min.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2025 16:29:33] "[33mGET /static/index.js HTTP/1.1[0m" 404 -
+DEBUG:googleapiclient.discovery:URL being requested: GET https://www.googleapis.com/drive/v3/files?q=name+%3D+%27fluffy_dog.jpeg%27+and+%271hUgN1BnLdaLzmelLM3ZJMQ1Sklt0FYrZ%27+in+parents+and+trashed+%3D+false&fields=files%28id%29&alt=json
+DEBUG:google_auth_httplib2:Making request: POST https://oauth2.googleapis.com/token
+DEBUG:googleapiclient.discovery:URL being requested: GET https://www.googleapis.com/drive/v3/files/1rWKYLfpWAACJ-wPx10EEOh3ZmaqBiURd?alt=media
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2025 16:29:46] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2025 16:29:46] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2025 16:29:46] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2025 16:29:46] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=j9eWsfreguwHJzsA4Grd HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/joe/projects/doggydex/website/views.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:googleapiclient.discovery_cache:file_cache is only supported with oauth2client<4.0.0
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 505-592-026
+INFO:werkzeug: * Detected change in '/home/joe/projects/doggydex/website/identifier.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:googleapiclient.discovery_cache:file_cache is only supported with oauth2client<4.0.0
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 505-592-026
+DEBUG:googleapiclient.discovery:URL being requested: GET https://www.googleapis.com/drive/v3/files?q=name+%3D+%27fluffy_dog.jpeg%27+and+%271hUgN1BnLdaLzmelLM3ZJMQ1Sklt0FYrZ%27+in+parents+and+trashed+%3D+false&fields=files%28id%29&alt=json
+DEBUG:google_auth_httplib2:Making request: POST https://oauth2.googleapis.com/token
+DEBUG:googleapiclient.discovery:URL being requested: GET https://www.googleapis.com/drive/v3/files/1rWKYLfpWAACJ-wPx10EEOh3ZmaqBiURd?alt=media
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2025 16:30:51] "POST / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2025 16:30:51] "[33mGET /js/bootstap.bundle.min.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2025 16:30:51] "[33mGET /static/index.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2025 16:30:51] "[33mGET /css/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2025 16:30:51] "[33mGET /css/styles.css/bootstrap.min.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2025 16:30:51] "[36mGET /static/images/dog.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2025 16:30:51] "[33mGET /static/index.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2025 16:30:56] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2025 16:30:56] "[33mGET /css/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2025 16:30:56] "[33mGET /css/styles.css/bootstrap.min.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2025 16:30:56] "[33mGET /js/bootstap.bundle.min.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2025 16:30:56] "[33mGET /static/index.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2025 16:30:56] "[36mGET /static/spinner.gif HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2025 16:30:56] "[36mGET /static/images/dog.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2025 16:30:56] "[33mGET /js/bootstap.bundle.min.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2025 16:30:56] "[33mGET /static/index.js HTTP/1.1[0m" 404 -
+DEBUG:googleapiclient.discovery:URL being requested: GET https://www.googleapis.com/drive/v3/files?q=name+%3D+%27little_dog.jpeg%27+and+%271hUgN1BnLdaLzmelLM3ZJMQ1Sklt0FYrZ%27+in+parents+and+trashed+%3D+false&fields=files%28id%29&alt=json
+DEBUG:googleapiclient.discovery:URL being requested: GET https://www.googleapis.com/drive/v3/files/1_qNp3O3dp_jMOdiWe4iEe6cF1qxOR6nO?alt=media
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2025 16:31:07] "POST / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2025 16:31:07] "[33mGET /js/bootstap.bundle.min.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2025 16:31:07] "[33mGET /static/index.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2025 16:31:07] "[33mGET /css/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2025 16:31:07] "[33mGET /css/styles.css/bootstrap.min.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2025 16:31:07] "[36mGET /static/images/dog.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2025 16:31:07] "[33mGET /static/index.js HTTP/1.1[0m" 404 -

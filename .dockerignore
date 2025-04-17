@@ -24,6 +24,7 @@ poetry.lock
 pyproject.toml
 certs/
 instance/
+models/dognet-convnext-large.pth
 
 # Docs
 README.md

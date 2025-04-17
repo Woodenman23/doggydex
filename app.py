@@ -1,7 +1,8 @@
-from website import create_app
+from website import create_app, logger
 
 app = create_app()
 
 if __name__ == "__main__":
     ssl_context = (("certs/cert.pem", "certs/key.pem"),)
     app.run(host="0.0.0.0", port=5001, debug=True)
+    logger.info("Server started")

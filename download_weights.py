@@ -1,4 +1,0 @@
-from torchvision.models import convnext_large
-from torchvision.models.convnext import ConvNeXt_Large_Weights
-
-convnext_large(weights=ConvNeXt_Large_Weights.IMAGENET1K_V1)

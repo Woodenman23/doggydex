@@ -1,6 +1,19 @@
+import logging
+
 from flask import Flask
 from pathlib import Path
 from datetime import timedelta
+
+PROJECT_ROOT = Path(__file__).parent.parent
+IMAGES_PATH = PROJECT_ROOT / "website/static/images"
+
+
+# Configuration
+num_dog_breeds = 120
+MODEL_PATH = PROJECT_ROOT / "models/dognet-convnext_large.pth"
+
+logger = logging.getLogger(__name__)
+logging.basicConfig(filename="doggydex.log", encoding="utf-8", level=logging.DEBUG)
 
 
 class Section:
@@ -10,10 +23,6 @@ class Section:
             word.capitalize() for word in name.replace("_", " ").split()
         )
         self.route = "/" + name
-
-
-PROJECT_ROOT = Path(__file__).parent.parent
-IMAGES_PATH = PROJECT_ROOT / "website/static/images"
 
 
 def get_secret(secret_name):

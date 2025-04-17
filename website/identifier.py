@@ -1,27 +1,12 @@
 import torch
 import torchvision.transforms as transforms
-from torchvision.models import convnext_large
 from website import PROJECT_ROOT
 from website.classes import classes
 
-# Configuration
-num_dog_breeds = 120
-MODEL_PATH = PROJECT_ROOT / "models/dognet-convnext_large.pth"
-
 
 def identify(image):
-    # Initialize the base ConvNeXt Large model
-    model = convnext_large(weights=None)
-    # Replace the classifier with your fine-tuned layer
-    model.classifier[-1] = torch.nn.Linear(
-        model.classifier[-1].in_features, num_dog_breeds
-    )
-    # Load your fine-tuned state dictionary
-    model.load_state_dict(torch.load(str(MODEL_PATH), map_location=torch.device("cpu")))
-    # Apply dynamic quantization to linear layers
-    model = torch.quantization.quantize_dynamic(
-        model, {torch.nn.Linear}, dtype=torch.qint8
-    )
+
+    model = torch.load(str(PROJECT_ROOT / "models/dognext_large_quantized.pth"))
     # Set model to evaluation mode
     model.eval()
 

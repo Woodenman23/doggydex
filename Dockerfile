@@ -35,5 +35,5 @@ COPY --from=builder /root/.local/bin /usr/local/bin
 COPY . .
 COPY secrets/doggydex-456203-e6ca832dbc3c.json ./secrets/
 EXPOSE 8080
-RUN python3 download_weights.py
+# RUN python3 download_weights.py
 CMD ["gunicorn", "-b", "0.0.0.0:8080", "app:app"]
