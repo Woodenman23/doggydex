@@ -44,6 +44,6 @@ def create_app() -> Flask:
 
     from website.views import views
 
-    app.register_blueprint(views, url_prefix="/")
+    app.register_blueprint(views)
 
     return app

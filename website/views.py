@@ -10,7 +10,7 @@ from flask import (
 from website.drive_access import upload_to_drive, download_from_drive
 from website.identifier import identify
 
-views = Blueprint("views", __name__)
+views = Blueprint("views", __name__, url_prefix="/doggydex")
 
 
 @views.route("/", methods=["GET", "POST"])
