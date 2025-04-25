@@ -15,6 +15,14 @@ MODEL_PATH = PROJECT_ROOT / "models/dognet-convnext_large.pth"
 logger = logging.getLogger(__name__)
 logging.basicConfig(filename="doggydex.log", encoding="utf-8", level=logging.DEBUG)
 
+class ScriptNameMiddleware:
+    def __init__(self, app, script_name=''):
+        self.app = app
+        self.script_name = script_name
+
+    def __call__(self, environ, start_response):
+        environ['SCRIPT_NAME'] = self.script_name
+        return self.app(environ, start_response)
 
 class Section:
     def __init__(self, name: str) -> None:
@@ -41,6 +49,7 @@ def create_app() -> Flask:
     app.permanent_session_lifetime = timedelta(days=3)
     app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///users.sqlite3"
     app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
+    app.wsgi_app = ScriptNameMiddleware(app.wsgi_app, script_name='/doggydex')
 
     from website.views import views
 
