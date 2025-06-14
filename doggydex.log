@@ -74,3 +74,121 @@ INFO:werkzeug:127.0.0.1 - - [17/Apr/2025 16:31:07] "[33mGET /css/styles.css HTT
 INFO:werkzeug:127.0.0.1 - - [17/Apr/2025 16:31:07] "[33mGET /css/styles.css/bootstrap.min.css HTTP/1.1[0m" 404 -
 INFO:werkzeug:127.0.0.1 - - [17/Apr/2025 16:31:07] "[36mGET /static/images/dog.jpg HTTP/1.1[0m" 304 -
 INFO:werkzeug:127.0.0.1 - - [17/Apr/2025 16:31:07] "[33mGET /static/index.js HTTP/1.1[0m" 404 -
+INFO:googleapiclient.discovery_cache:file_cache is only supported with oauth2client<4.0.0
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.42.107:5001
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+INFO:googleapiclient.discovery_cache:file_cache is only supported with oauth2client<4.0.0
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 473-678-004
+INFO:werkzeug: * Detected change in '/home/joe/projects/doggydex/website/views.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 473-678-004
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.42.107:5001
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 984-543-044
+INFO:website:Server started
+INFO:website:Server started
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.42.107:5001
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 984-543-044
+INFO:werkzeug:127.0.0.1 - - [14/Jun/2025 15:36:40] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Jun/2025 15:36:40] "[33mGET /css/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Jun/2025 15:36:40] "[33mGET /css/styles.css/bootstrap.min.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Jun/2025 15:36:40] "[33mGET /js/bootstap.bundle.min.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Jun/2025 15:36:40] "[33mGET /static/index.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Jun/2025 15:36:40] "GET /static/images/dog.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Jun/2025 15:36:40] "GET /static/spinner.gif HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Jun/2025 15:36:40] "[33mGET /js/bootstap.bundle.min.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Jun/2025 15:36:40] "[33mGET /static/index.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Jun/2025 15:36:41] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.42.107:5001
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.42.107:5001
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 984-543-044
+INFO:website:Server started
+INFO:website:Server started
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.42.107:5001
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 984-543-044
+INFO:werkzeug:127.0.0.1 - - [14/Jun/2025 15:43:39] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Jun/2025 15:43:39] "[33mGET /js/bootstap.bundle.min.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Jun/2025 15:43:39] "GET /static/css/styles.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Jun/2025 15:43:39] "[33mGET /static/index.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Jun/2025 15:43:39] "[36mGET /static/images/dog.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Jun/2025 15:43:39] "[36mGET /static/spinner.gif HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Jun/2025 15:43:39] "[33mGET /js/bootstap.bundle.min.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Jun/2025 15:43:39] "[33mGET /static/index.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Jun/2025 15:44:50] "POST / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Jun/2025 15:44:59] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Jun/2025 15:45:16] "POST / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Jun/2025 15:46:54] "POST / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Jun/2025 15:46:57] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Jun/2025 15:46:57] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Jun/2025 15:46:57] "[33mGET /js/bootstap.bundle.min.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Jun/2025 15:46:57] "[33mGET /static/index.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Jun/2025 15:46:57] "[36mGET /static/images/dog.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Jun/2025 15:46:57] "[36mGET /static/spinner.gif HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Jun/2025 15:46:57] "[33mGET /js/bootstap.bundle.min.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Jun/2025 15:46:57] "[33mGET /static/index.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Jun/2025 15:47:06] "POST / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Jun/2025 15:48:27] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Jun/2025 15:48:28] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Jun/2025 15:48:28] "[33mGET /js/bootstap.bundle.min.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Jun/2025 15:48:28] "[33mGET /static/index.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Jun/2025 15:48:28] "[36mGET /static/images/dog.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Jun/2025 15:48:28] "[36mGET /static/spinner.gif HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Jun/2025 15:48:28] "[33mGET /js/bootstap.bundle.min.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Jun/2025 15:48:28] "[33mGET /static/index.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Jun/2025 15:48:41] "POST / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Jun/2025 15:48:41] "[33mGET /js/bootstap.bundle.min.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Jun/2025 15:48:41] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Jun/2025 15:48:41] "[33mGET /static/index.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Jun/2025 15:48:41] "[36mGET /static/images/dog.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Jun/2025 15:48:41] "[33mGET /js/bootstap.bundle.min.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Jun/2025 15:48:41] "[33mGET /static/index.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Jun/2025 15:49:11] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Jun/2025 15:49:11] "[33mGET /js/bootstap.bundle.min.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Jun/2025 15:49:11] "[33mGET /static/index.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Jun/2025 15:49:11] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Jun/2025 15:49:11] "[36mGET /static/images/dog.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Jun/2025 15:49:11] "[36mGET /static/spinner.gif HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Jun/2025 15:49:11] "[33mGET /js/bootstap.bundle.min.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Jun/2025 15:49:11] "[33mGET /static/index.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Jun/2025 15:51:22] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Jun/2025 15:51:22] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Jun/2025 15:51:22] "[33mGET /js/bootstap.bundle.min.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Jun/2025 15:51:22] "[33mGET /static/index.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Jun/2025 15:51:22] "[36mGET /static/images/dog.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Jun/2025 15:51:22] "[36mGET /static/spinner.gif HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Jun/2025 15:51:22] "[33mGET /js/bootstap.bundle.min.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Jun/2025 15:51:22] "[33mGET /static/index.js HTTP/1.1[0m" 404 -

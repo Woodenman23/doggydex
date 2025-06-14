@@ -4,22 +4,55 @@
 {% block content %}
 <div class="container my-5">
   <div class="row justify-content-center">
-    <div class="col-md-8 col-lg-6 bg-white p-4 rounded shadow text-center">
-      <h2 class="mb-4">Your dog is a...</h2>
+    <div class="col-md-10 col-lg-8">
+      <div class="results-container p-5 text-center fade-in">
+        <h2 class="mb-4">
+          <i class="fas fa-paw text-primary me-2"></i>
+          Meet Your Dog!
+        </h2>
 
-      <img 
-        src="data:image/jpeg;base64,{{ dog_image }}" 
-        alt="Dog Image" 
-        class="img-fluid rounded mb-4" 
-        style="max-height: 300px;"
-      />
+        <div class="row align-items-center mb-4">
+          <div class="col-md-5">
+            <img 
+              src="data:image/jpeg;base64,{{ dog_image }}" 
+              alt="Your Dog" 
+              class="uploaded-image img-fluid"
+              style="max-height: 300px; width: 100%; object-fit: cover;"
+            />
+          </div>
+          <div class="col-md-7 text-start">
+            {{ results | safe }}
+          </div>
+        </div>
 
-      <p class="lead">{{ results | safe }}</p>
-
-      <a href="{{ url_for('views.home') }}" class="btn btn-primary mt-3">
-        Try another image
-      </a>
+        <div class="text-center mt-4">
+          <a href="{{ url_for('views.home') }}" class="btn btn-primary btn-lg me-3">
+            <i class="fas fa-camera me-2"></i>Try Another Photo
+          </a>
+          <button class="btn btn-outline-secondary btn-lg" onclick="shareResults()">
+            <i class="fas fa-share-alt me-2"></i>Share Results
+          </button>
+        </div>
+      </div>
     </div>
   </div>
 </div>
+
+<script>
+  function shareResults() {
+    if (navigator.share) {
+      navigator.share({
+        title: 'DoggyDex Results',
+        text: 'Check out my dog breed identification results from DoggyDex!',
+        url: window.location.href
+      });
+    } else {
+      // Fallback for browsers that don't support Web Share API
+      const url = window.location.href;
+      navigator.clipboard.writeText(url).then(() => {
+        alert('Results link copied to clipboard!');
+      });
+    }
+  }
+</script>
 {% endblock %}
