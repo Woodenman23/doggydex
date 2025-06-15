@@ -11,12 +11,12 @@
       <div class="main-container p-4 text-center fade-in mb-4">
         <h2 class="mb-3">
           <i class="fas fa-paw text-primary me-2"></i>
-          Your Dog is a...
+          Your Dog is {{ 'an' if results.breed1[0].lower() in 'aeiou' else 'a' }}...
         </h2>
         <img 
           src="data:image/jpeg;base64,{{ dog_image }}" 
           alt="Your Dog" 
-          class="uploaded-image img-fluid"
+          class="uploaded-image img-fluid mb-4"
           style="max-height: 400px; width: 100%; object-fit: cover;"
         />
         <h1 class="display-5 mb-2">
@@ -45,7 +45,7 @@
                   {{ results.breed2 }}
                 </a>
               </h5>
-              <span class="badge bg-secondary fs-6">{{ "%.1f"|format(results.prob2) }}%</span>
+              <span class="text-danger fs-6 fw-semibold" style="opacity: 0.8;">{{ "%.1f"|format(results.prob2) }}%</span>
             </div>
           </div>
           <div class="col-6">
@@ -57,15 +57,15 @@
                   {{ results.breed3 }}
                 </a>
               </h5>
-              <span class="badge bg-secondary fs-6">{{ "%.1f"|format(results.prob3) }}%</span>
+              <span class="text-danger fs-6 fw-semibold" style="opacity: 0.8;">{{ "%.1f"|format(results.prob3) }}%</span>
             </div>
           </div>
         </div>
       </div>
 
       <!-- Action Buttons -->
-      <div class="text-center">
-        <a href="{{ url_for('views.home') }}" class="btn btn-primary btn-lg me-3">
+      <div class="text-center mb-3">
+        <a href="{{ url_for('views.home') }}" class="btn btn-primary btn-lg">
           <i class="fas fa-camera me-2"></i> Try Another Photo
         </a>
       </div>

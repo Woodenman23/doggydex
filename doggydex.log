@@ -323,3 +323,25 @@ INFO:werkzeug:127.0.0.1 - - [15/Jun/2025 11:47:14] "[33mGET /static/index.js HT
 INFO:werkzeug:127.0.0.1 - - [15/Jun/2025 11:47:14] "[36mGET /static/images/dog.jpg HTTP/1.1[0m" 304 -
 INFO:werkzeug:127.0.0.1 - - [15/Jun/2025 11:47:14] "[33mGET /js/bootstap.bundle.min.js HTTP/1.1[0m" 404 -
 INFO:werkzeug:127.0.0.1 - - [15/Jun/2025 11:47:14] "[33mGET /static/index.js HTTP/1.1[0m" 404 -
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 984-543-044
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2025 12:13:44] "POST / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2025 12:13:44] "[33mGET /js/bootstap.bundle.min.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2025 12:13:44] "[33mGET /static/index.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2025 12:13:44] "GET /static/css/styles.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2025 12:13:44] "[36mGET /static/images/dog.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2025 12:13:44] "[33mGET /js/bootstap.bundle.min.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2025 12:13:44] "[33mGET /static/index.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2025 12:16:57] "POST / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2025 12:16:57] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2025 12:16:57] "[33mGET /js/bootstap.bundle.min.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2025 12:16:57] "[33mGET /static/index.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2025 12:16:57] "[36mGET /static/images/dog.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2025 12:16:57] "[33mGET /js/bootstap.bundle.min.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2025 12:16:57] "[33mGET /static/index.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2025 12:19:00] "POST / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2025 12:19:00] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2025 12:19:00] "[33mGET /js/bootstap.bundle.min.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2025 12:19:00] "[33mGET /static/index.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2025 12:19:00] "[36mGET /static/images/dog.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2025 12:19:00] "[33mGET /static/index.js HTTP/1.1[0m" 404 -
