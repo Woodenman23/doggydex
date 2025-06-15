@@ -18,10 +18,11 @@
 
 /* Global Styles */
 body {
-  font-family: 'Poppins', sans-serif;
-  background: linear-gradient(135deg, var(--light-bg) 0%, #e8ddd4 100%);
+  font-family: 'Poppins', 'Arial', sans-serif;
+  background: linear-gradient(135deg, #f8f5f1 0%, #e8ddd4 100%);
+  background-attachment: fixed;
   min-height: 100vh;
-  color: var(--text-dark);
+  color: #3c2414;
 }
 
 /* Custom Container Styling */

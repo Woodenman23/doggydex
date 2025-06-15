@@ -36,6 +36,15 @@ def get_secret(secret_name):
 
 def create_app() -> Flask:
     app = Flask(__name__)
+    
+    # Set base path for deployment context
+    import os
+    base_path = os.environ.get('BASE_PATH', '')
+    app.config['BASE_PATH'] = base_path
+    
+    @app.context_processor
+    def inject_base_path():
+        return dict(base_path=app.config['BASE_PATH'])
 
     from website.views import views
 
