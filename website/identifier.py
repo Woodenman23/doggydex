@@ -10,6 +10,10 @@ def identify(image):
     # Set model to evaluation mode
     model.eval()
 
+    # Convert image to RGB (removes alpha channel if present)
+    if image.mode != 'RGB':
+        image = image.convert('RGB')
+
     # Preprocess the input image
     transform = transforms.Compose(
         [
@@ -38,7 +42,6 @@ def identify(image):
     breed3 = format_name(classes[top3_indices[0][2].item()][10:])
     prob3 = top3_probs[0][2].item() * 100
 
-    # Format the results with clean percentages
     results = {
         'breed1': breed1,
         'prob1': prob1,

@@ -71,6 +71,27 @@ body {
   box-shadow: 0 0 0 0.2rem rgba(210, 105, 30, 0.25);
 }
 
+.form-control[type="file"] {
+  padding: 0;
+  height: 56px;
+}
+
+.form-control[type="file"]::-webkit-file-upload-button {
+  height: 100%;
+  border: none;
+  border-radius: 10px 0 0 10px;
+  background: #e9ecef;
+  color: #495057;
+  font-weight: 500;
+  padding: 0 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.form-control[type="file"]::-webkit-file-upload-button:hover {
+  background: #dee2e6;
+}
+
 /* Custom File Upload Area */
 .upload-area {
   border: 3px dashed rgba(210, 105, 30, 0.3);
@@ -79,7 +100,7 @@ body {
   text-align: center;
   transition: all 0.3s ease;
   cursor: pointer;
-  background: rgba(248, 245, 241, 0.5);
+  background: rgba(242, 248, 241, 0.71);
 }
 
 .upload-area:hover {
@@ -238,6 +259,31 @@ body {
   border-radius: var(--border-radius);
   box-shadow: var(--shadow);
   border: 3px solid var(--primary-color);
+}
+
+/* Section Styling */
+
+.step-card {
+  background: rgba(248, 245, 241, 0.7);
+  border-radius: var(--border-radius);
+  border: 1px solid rgba(210, 105, 30, 0.1);
+}
+
+/* Tips Section */
+.tips-section {
+  background: rgba(255, 248, 220, 0.8);
+  border: 1px solid rgba(255, 193, 7, 0.3);
+  border-left: 4px solid #ffc107;
+}
+
+.tips-section h6 {
+  color: var(--text-dark);
+  font-weight: 600;
+}
+
+.tips-section li {
+  font-size: 0.9rem;
+  color: #6c757d;
 }
 
 /* Footer Styling */

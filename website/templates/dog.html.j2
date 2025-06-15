@@ -69,31 +69,10 @@
           <i class="fas fa-camera me-2"></i> Try Another Photo
         </a>
       </div>
-      <div class="text-center">
-        <button class="btn btn-outline-secondary btn-lg" onclick="shareResults()">
-          <i class="fas fa-share-alt me-2"></i> Share Results
-        </button>
-      </div>
+      <!-- TODO: Add social media sharing functionality (Twitter, Facebook, Reddit, etc.) to allow users to share their dog breed identification results -->
 
     </div>
   </div>
 </div>
 
-<script>
-  function shareResults() {
-    if (navigator.share) {
-      navigator.share({
-        title: 'DoggyDex Results',
-        text: 'Check out my dog breed identification results from DoggyDex!',
-        url: window.location.href
-      });
-    } else {
-      // Fallback for browsers that don't support Web Share API
-      const url = window.location.href;
-      navigator.clipboard.writeText(url).then(() => {
-        alert('Results link copied to clipboard!');
-      });
-    }
-  }
-</script>
 {% endblock %}
