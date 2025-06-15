@@ -4,36 +4,77 @@
 {% block content %}
 <div class="container my-5">
   <div class="row justify-content-center">
-    <div class="col-md-10 col-lg-8">
-      <div class="results-container p-5 text-center fade-in">
-        <h2 class="mb-4">
+    <div class="col-md-8 col-lg-6">
+    
+
+      <!-- Main Breed Result -->
+      <div class="main-container p-4 text-center fade-in mb-4">
+        <h2 class="mb-3">
           <i class="fas fa-paw text-primary me-2"></i>
-          Meet Your Dog!
+          Your Dog is a...
         </h2>
-
-        <div class="row align-items-center mb-4">
-          <div class="col-md-5">
-            <img 
-              src="data:image/jpeg;base64,{{ dog_image }}" 
-              alt="Your Dog" 
-              class="uploaded-image img-fluid"
-              style="max-height: 300px; width: 100%; object-fit: cover;"
-            />
-          </div>
-          <div class="col-md-7 text-start">
-            {{ results | safe }}
-          </div>
-        </div>
-
-        <div class="text-center mt-4">
-          <a href="{{ url_for('views.home') }}" class="btn btn-primary btn-lg me-3">
-            <i class="fas fa-camera me-2"></i>Try Another Photo
+        <img 
+          src="data:image/jpeg;base64,{{ dog_image }}" 
+          alt="Your Dog" 
+          class="uploaded-image img-fluid"
+          style="max-height: 400px; width: 100%; object-fit: cover;"
+        />
+        <h1 class="display-5 mb-2">
+          <a href="https://www.google.com/search?q={{ results.breed1 | urlencode }}+dog+breed" 
+             target="_blank" 
+             class="text-primary text-decoration-none breed-link">
+            {{ results.breed1 }}
           </a>
-          <button class="btn btn-outline-secondary btn-lg" onclick="shareResults()">
-            <i class="fas fa-share-alt me-2"></i>Share Results
-          </button>
+        </h1>
+        <p class="lead text-muted">{{ "%.1f"|format(results.prob1) }}% confidence</p>
+      </div>
+
+      <!-- Other Possibilities -->
+      <div class="main-container p-4 text-center fade-in mb-4">
+        <h4 class="mb-4 text-secondary">
+          <i class="fas fa-question-circle me-2"></i>
+          Other Possibilities
+        </h4>
+        <div class="row">
+          <div class="col-6">
+            <div class="breed-option p-3 rounded">
+              <h5 class="mb-2">
+                <a href="https://www.google.com/search?q={{ results.breed2 | urlencode }}+dog+breed" 
+                   target="_blank" 
+                   class="text-dark text-decoration-none breed-link">
+                  {{ results.breed2 }}
+                </a>
+              </h5>
+              <span class="badge bg-secondary fs-6">{{ "%.1f"|format(results.prob2) }}%</span>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="breed-option p-3 rounded">
+              <h5 class="mb-2">
+                <a href="https://www.google.com/search?q={{ results.breed3 | urlencode }}+dog+breed" 
+                   target="_blank" 
+                   class="text-dark text-decoration-none breed-link">
+                  {{ results.breed3 }}
+                </a>
+              </h5>
+              <span class="badge bg-secondary fs-6">{{ "%.1f"|format(results.prob3) }}%</span>
+            </div>
+          </div>
         </div>
       </div>
+
+      <!-- Action Buttons -->
+      <div class="text-center">
+        <a href="{{ url_for('views.home') }}" class="btn btn-primary btn-lg me-3">
+          <i class="fas fa-camera me-2"></i> Try Another Photo
+        </a>
+      </div>
+      <div class="text-center">
+        <button class="btn btn-outline-secondary btn-lg" onclick="shareResults()">
+          <i class="fas fa-share-alt me-2"></i> Share Results
+        </button>
+      </div>
+
     </div>
   </div>
 </div>

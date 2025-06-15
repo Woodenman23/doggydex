@@ -195,6 +195,44 @@ body {
   border-left-color: #6c757d;
 }
 
+/* Breed Option Styling */
+.breed-option {
+  background: rgba(248, 245, 241, 0.7);
+  border: 1px solid rgba(210, 105, 30, 0.1);
+  transition: all 0.3s ease;
+}
+
+.breed-option:hover {
+  background: rgba(210, 105, 30, 0.05);
+  border-color: var(--primary-color);
+  transform: translateY(-2px);
+}
+
+/* Breed Link Styling */
+.breed-link {
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.breed-link:hover {
+  color: var(--primary-color) !important;
+  text-decoration: underline !important;
+}
+
+.breed-link::after {
+  content: '\f35d';
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  font-size: 0.7em;
+  margin-left: 8px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.breed-link:hover::after {
+  opacity: 1;
+}
+
 /* Image Styling */
 .uploaded-image {
   border-radius: var(--border-radius);

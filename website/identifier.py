@@ -38,45 +38,15 @@ def identify(image):
     breed3 = format_name(classes[top3_indices[0][2].item()][10:])
     prob3 = top3_probs[0][2].item() * 100
 
-    # Format the results with progress bars
-    def get_confidence_class(prob):
-        if prob >= 70:
-            return "high"
-        elif prob >= 40:
-            return "medium"
-        else:
-            return "low"
-    
-    results = f"""
-    <div class="breed-card primary fade-in">
-        <h3 class='mb-3'><strong>{breed1}</strong></h3>
-        <div class="confidence-bar">
-            <div class="confidence-fill {get_confidence_class(prob1)}" style="width: {prob1:.1f}%">
-                {prob1:.1f}%
-            </div>
-        </div>
-    </div>
-    
-    <div class="breed-card secondary fade-in">
-        <h5 class="mb-2">Other possibilities:</h5>
-        <div class="mb-3">
-            <strong>{breed2}</strong>
-            <div class="confidence-bar">
-                <div class="confidence-fill {get_confidence_class(prob2)}" style="width: {prob2:.1f}%">
-                    {prob2:.1f}%
-                </div>
-            </div>
-        </div>
-        <div>
-            <strong>{breed3}</strong>
-            <div class="confidence-bar">
-                <div class="confidence-fill {get_confidence_class(prob3)}" style="width: {prob3:.1f}%">
-                    {prob3:.1f}%
-                </div>
-            </div>
-        </div>
-    </div>
-    """
+    # Format the results with clean percentages
+    results = {
+        'breed1': breed1,
+        'prob1': prob1,
+        'breed2': breed2,
+        'prob2': prob2,
+        'breed3': breed3,
+        'prob3': prob3
+    }
 
     return results
 
