@@ -192,3 +192,22 @@ INFO:werkzeug:127.0.0.1 - - [14/Jun/2025 15:51:22] "[36mGET /static/images/dog.
 INFO:werkzeug:127.0.0.1 - - [14/Jun/2025 15:51:22] "[36mGET /static/spinner.gif HTTP/1.1[0m" 304 -
 INFO:werkzeug:127.0.0.1 - - [14/Jun/2025 15:51:22] "[33mGET /js/bootstap.bundle.min.js HTTP/1.1[0m" 404 -
 INFO:werkzeug:127.0.0.1 - - [14/Jun/2025 15:51:22] "[33mGET /static/index.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.42.107:5001
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 984-543-044
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2025 10:56:08] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2025 10:56:08] "[33mGET /js/bootstap.bundle.min.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2025 10:56:08] "[33mGET /static/index.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2025 10:56:08] "GET /static/css/styles.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2025 10:56:08] "[36mGET /static/images/dog.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2025 10:56:08] "[36mGET /static/spinner.gif HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2025 10:56:08] "[33mGET /js/bootstap.bundle.min.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2025 10:56:08] "[33mGET /static/index.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2025 10:56:08] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:website:Server started
+INFO:website:Server started
